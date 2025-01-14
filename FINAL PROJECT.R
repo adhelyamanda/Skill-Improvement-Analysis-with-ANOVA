@@ -50,6 +50,8 @@ ggplot(df, aes(x = `Practice_Hours/Week`, y = `Skill_Improvement (%)`)) +
   scale_color_manual(values = c("Visual" = "blue", "Auditory" = "red", "Kinesthetic" = "green"))
 
 # Boxplot for Skill Improvement by Learning Style
+install.packages("ggplot2")
+library(ggplot2)
 ggplot(df, aes(x = Learning_Style, y = `Skill_Improvement (%)`, fill = Learning_Style)) +
   geom_boxplot() +
   labs(title = "Boxplot: Skill Improvement by Learning Style",
